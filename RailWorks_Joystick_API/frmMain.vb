@@ -42,7 +42,7 @@ Public Class frmMain
 	End Sub
 
 	Private Sub PopulateSettingsList()
-		Dim DI As New DirectoryInfo(Application.StartupPath)
+        Dim DI As New DirectoryInfo(FileSystem.CurDir)
 		Dim Files As FileInfo() = DI.GetFiles("*.CMAP")
 		lstSettings.Items.Clear
 		For Each FI In Files

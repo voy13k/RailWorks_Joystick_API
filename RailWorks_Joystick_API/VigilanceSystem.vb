@@ -59,7 +59,8 @@ Public Class VigilanceSystem
 		Randomize
 		Dim EarlyTrigger As Boolean = False
 		While Running
-			If Not UseVigilanceSystem Then Continue While
+            Thread.Sleep(100)
+            If Not UseVigilanceSystem Then Continue While
 			If AlertTimer Is Nothing Or TriggerTimer Is Nothing Then 
 				AlertTimer = New Stopwatch
 				TriggerTimer = New Stopwatch
@@ -109,8 +110,7 @@ Public Class VigilanceSystem
 			If TriggerTimer.IsRunning And TriggerTimer.ElapsedMilliseconds > TriggerTimeout Then
 				ChangeState(VigilanceState.Triggered)
 			End If
-			Thread.Sleep(100)
-		End While
+        End While
 
 	End Sub
 	
@@ -122,9 +122,9 @@ Public Class VigilanceSystem
 			Case VigilanceState.Vigilant
 				My.Computer.Audio.Stop
 			Case VigilanceState.Alert
-				My.Computer.Audio.Play("VigilanceAlert.wav", AudioPlayMode.BackgroundLoop)
+                My.Computer.Audio.Play("VigilanceAlert.mp3", AudioPlayMode.BackgroundLoop)
 			Case VigilanceState.Triggered
-				My.Computer.Audio.Play("VigilanceTriggered.wav", AudioPlayMode.BackgroundLoop)
+                My.Computer.Audio.Play("VigilanceTriggered.mp3", AudioPlayMode.BackgroundLoop)
 		End Select
 	End Sub
 

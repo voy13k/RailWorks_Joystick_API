@@ -13,33 +13,33 @@ Public Class InputHandler
     ByVal nMaxCount As Integer) As Integer
     End Function
 	
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Sub SetRailSimValue(ByVal Action As ActionList, ByVal Value As Single)
-	End Sub
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Sub SetRailSimValue(ByVal Action As ActionList, ByVal Value As Single)
+    End Sub
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Function GetRailSimValue(ByVal Action As ActionList, ByVal Value As GetValueModifier) As Single
-	End Function
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Function GetRailSimValue(ByVal Action As ActionList, ByVal Value As GetValueModifier) As Single
+    End Function
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Function GetRailSimConnected() As Boolean
-	End Function
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Function GetRailSimConnected() As Boolean
+    End Function
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Sub SetRailSimConnected(ByVal Value As Boolean)
-	End Sub
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Sub SetRailSimConnected(ByVal Value As Boolean)
+    End Sub
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Sub SetRailDriverConnected(ByVal Value As Boolean)
-	End Sub
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Sub SetRailDriverConnected(ByVal Value As Boolean)
+    End Sub
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Function GetRailSimCombinedThrottleBrake() As Boolean
-	End Function
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Function GetRailSimCombinedThrottleBrake() As Boolean
+    End Function
 
-	<DllImport("D:\Games\RailWorks 2\plugins\RailDriver.dll", CharSet:=CharSet.Auto)> _
-	Shared Function GetRailSimLocoChanged() As Boolean
-	End Function
+    <DllImport("RailDriver.dll", CharSet:=CharSet.Auto)> _
+    Shared Function GetRailSimLocoChanged() As Boolean
+    End Function
 
 	Public Structure InputAxisStruct
 		Public Value As Integer
@@ -320,17 +320,17 @@ Public Class InputHandler
 			Dim CurHWnd As IntPtr = GetForegroundWindow
 			Dim CurWindowText As New System.Text.StringBuilder(255)
 			GetWindowText(CurHWnd, CurWindowText, 255)
-			If CurWindowText.ToString = "RailWorks" Then
-				Vigilance.InGame = True
-				SendToRW
-				Vigilance.LastTrainSpeed = Math.Abs(GetRailSimValue(ActionList.Speedometer, GetValueModifier.Current))
-				Debug.Print(GetRailSimValue(ActionList.EmergencyBrake, GetValueModifier.Current).ToString)
-				If (ControlsWindow.Visible) Then
-					GetCurrentValues
-				End If
-			Else
-				Vigilance.InGame = False
-			End If
+            If CurWindowText.ToString = "RailWorks" Or CurWindowText.ToString = "Train Simulator 2015" Then
+                Vigilance.InGame = True
+                SendToRW()
+                Vigilance.LastTrainSpeed = Math.Abs(GetRailSimValue(ActionList.Speedometer, GetValueModifier.Current))
+                Debug.Print(GetRailSimValue(ActionList.EmergencyBrake, GetValueModifier.Current).ToString)
+                If (ControlsWindow.Visible) Then
+                    GetCurrentValues()
+                End If
+            Else
+                Vigilance.InGame = False
+            End If
 			Thread.Sleep(APIInterval)
 		End While
 		_IsStopped = True

@@ -3,4 +3,7 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartWorkingDirectory>C:\Users\Public\Steam\steamapps\common\RailWorks\plugins\</StartWorkingDirectory>
+  </PropertyGroup>
 </Project>
