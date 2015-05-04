@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Background.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrakeKnob" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BrakeKnob.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnAlternateActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnAlternateActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnAWSActive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnAWSActive1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnAWSActive2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnAWSActive2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnAWSInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnAWSInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnBellActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnBellActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnBlank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCabActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnCabActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCouplingActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnCouplingActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnCylinderCocksActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnCylinderCocksActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEBrakeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnEBrakeActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnEBrakeInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnEBrakeInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnExternalFrontActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnExternalFrontActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnExternalRearActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnExternalRearActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnFreeRoamActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnFreeRoamActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnHeadOutLeftActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnHeadOutLeftActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnHeadOutLeftActive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnHeadOutLeftActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnHeadOutRightActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnHeadOutRightActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnHornActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnHornActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnLightsActive1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnLightsActive1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnLightsActive2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnLightsActive2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnLoadUnloadActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnLoadUnloadActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnNextCabActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnNextCabActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPantographActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPantographActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPassengerActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPassengerActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPreviousCabActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPreviousCabActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnSanderActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnSanderActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnSmallEjectorActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnSmallEjectorActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnStarterActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnStarterActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnStarterInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnStarterInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnTracksideActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnTracksideActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnWipersActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnWipersActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnYardActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnYardActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnZoomInActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnZoomInActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnZoomOutActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnZoomOutActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonControls1bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ButtonControls1bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonControls2bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ButtonControls2bg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlSlot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ControlSlot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControlSlotGear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ControlSlotGear.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi0.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi6.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi7.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi8.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Digi9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\Digi9.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\DigiBlank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiDot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\DigiDot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DigiMinus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\DigiMinus.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GearKnob" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\GearKnob.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabelPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\LabelPanel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReverserKnob" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ReverserKnob.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThrottleBrakeHandle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ThrottleBrakeHandle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThrottleHandle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\ThrottleHandle.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnManualCouplingActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnManualCouplingActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnManualCouplingInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnManualCouplingInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDriverGuideActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnDriverGuideActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnDriverGuideInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnDriverGuideInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnJunctionAheadActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnJunctionAheadActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnJunctionAheadInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnJunctionAheadInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnJunctionBehindActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnJunctionBehindActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnJunctionBehindInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnJunctionBehindInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPADAheadActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPADAheadActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPADAheadInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPADAheadInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPADBehindActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPADBehindActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnPADBehindInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnPADBehindInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPBrakeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\btnPBrakeActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnPBrakeInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\btnPBrakeInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnMapActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnMapActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnMapInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnMapInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLargeDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLargeDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgBlue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLargeBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLargeBlue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLargeOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLargeOrange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgOrange.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoIndicatorBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoIndicatorBlue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoIndicatorLargeBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoIndicatorLargeBlue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBg200Day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBg200Day.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBg200KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBg200KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLarge200Day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLarge200Day.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLarge200KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLarge200KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoGlass120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoGlass120.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoGlass200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoGlass200.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoIndicator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoIndicator.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoIndicatorLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoIndicatorLarge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBg300KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBg300KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLarge300KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLarge300KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoGlassLarge120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoGlassLarge120.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoGlassLarge200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoGlassLarge200.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBg360KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBg360KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpeedoBgLarge360KPHDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\SpeedoBgLarge360KPHDay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BtnVigilanceActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnVigilanceActive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BtnVigilanceInactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Images\BtnVigilanceInactive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

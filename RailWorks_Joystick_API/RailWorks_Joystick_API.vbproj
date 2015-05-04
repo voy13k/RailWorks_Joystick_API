@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8DA0D5B-5732-4740-88D7-2DBE2F3682EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RailWorks_Joystick_API.My.MyApplication</StartupObject>
+    <RootNamespace>RailWorks_Joystick_API</RootNamespace>
+    <AssemblyName>RailWorks_Joystick_API</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RailWorks_Joystick_API.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RailWorks_Joystick_API.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmControls.Designer.vb">
+      <DependentUpon>frmControls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmControls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageControls.Designer.vb">
+      <DependentUpon>frmManageControls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageControls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpeedo.Designer.vb">
+      <DependentUpon>frmSpeedo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpeedo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVigilanceSystem.Designer.vb">
+      <DependentUpon>frmVigilanceSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVigilanceSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="InputHandler.vb" />
+    <Compile Include="Joystick.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ucControls.xaml.vb">
+      <DependentUpon>ucControls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucLargeSpeedo.xaml.vb">
+      <DependentUpon>ucLargeSpeedo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VigilanceSystem.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmControls.resx">
+      <DependentUpon>frmControls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageControls.resx">
+      <DependentUpon>frmManageControls.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpeedo.resx">
+      <DependentUpon>frmSpeedo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVigilanceSystem.resx">
+      <DependentUpon>frmVigilanceSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ControlSlot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ucControls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucLargeSpeedo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ReverserKnob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ThrottleHandle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BrakeKnob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ThrottleBrakeHandle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\LabelPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ControlSlotGear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\GearKnob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\DigiBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\DigiMinus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\Digi0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\DigiDot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ButtonControls1bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnWipersActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnBellActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnCylinderCocksActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnHornActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnLightsActive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnLightsActive2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnLoadUnloadActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPantographActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnSanderActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnSmallEjectorActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\ButtonControls2bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnAWSActive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnAWSActive2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnAWSInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnEBrakeActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnEBrakeInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnHeadOutLeftActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnStarterActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnStarterInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnZoomOutActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnZoomInActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnFreeRoamActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnYardActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnCouplingActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPreviousCabActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnNextCabActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPassengerActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnExternalRearActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnExternalFrontActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnAlternateActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnTracksideActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnHeadOutRightActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnCabActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnManualCouplingActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnManualCouplingInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\btnPBrakeActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\btnPBrakeInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnMapActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnMapInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnDriverGuideActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnDriverGuideInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnJunctionAheadActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnJunctionAheadInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnJunctionBehindActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnJunctionBehindInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPADAheadActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPADAheadInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPADBehindActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnPADBehindInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLargeDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoIndicatorBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLargeBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLargeOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoIndicatorLargeBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBg200Day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBg200KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLarge200Day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLarge200KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoGlass120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoGlass200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoIndicator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoIndicatorLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoGlassLarge120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoGlassLarge200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBg300KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLarge300KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBg360KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\SpeedoBgLarge360KPHDay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnVigilanceInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bin\Debug\Images\BtnVigilanceActive.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

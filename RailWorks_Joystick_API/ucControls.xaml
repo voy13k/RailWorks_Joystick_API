@@ -1,0 +1,245 @@
+﻿<UserControl x:Class="ucControls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="674">
+    <StackPanel Height="478" Name="AnalogControls" Width="672" Orientation="Vertical">
+            <StackPanel Height="310" Name="SpeedometerSlot" Width="672" Orientation="Horizontal" ToolTip="Analog Speedometer">
+            <Grid Width="10" />
+            <Grid Width="300">
+                <Image Name="SpeedoBG" Stretch="None" Width="300" Height="300" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/SpeedoBgDay.png"/>
+                <Image Name="SpeedoIndicator" Stretch="None" Width="300" Height="300" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/SpeedoIndicator.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <RotateTransform Angle="0"/>
+                    </Image.RenderTransform>
+                </Image>
+                <Image Name="SpeedoGlass" Stretch="None" Width="300" Height="300" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/SpeedoGlass120.png"/>
+            </Grid>
+            <StackPanel Width="254" Orientation="Vertical">
+                <StackPanel Width="254" Height="219" Orientation="Vertical">
+                    <StackPanel Width="254" Height="22" Orientation="Vertical">
+
+                    </StackPanel>
+                    <StackPanel Width="254" Height="88" Orientation="Horizontal">
+                        <StackPanel Width="166" Height="88" Orientation="Horizontal">
+                            <Grid Width="20" Height="88"/>
+                            <StackPanel Width="56" Height="88" Orientation="Vertical">
+                                <Image Name="MapActive" Width="56" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnMapActive.png" ToolTip="2D Map Toggle"/>
+                                <Image Name="DriverGuideActive" Width="56" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnDriverGuideActive.png" ToolTip="Driver Guide"/>
+                                <Grid Width="56" Height="8"/>
+                            </StackPanel>
+                            <StackPanel Width="40" Height="88" Orientation="Vertical">
+                                <Grid Width="40" Height="4"/>
+                                <Image Name="PADAheadActive" Width="40" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPADAheadActive.png" ToolTip="Pass at danger ahead"/>
+                                <Image Name="PADBehindActive" Width="40" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPADBehindActive.png" ToolTip="Pass at danger behind"/>
+                                <Grid Width="40" Height="4"/>
+                            </StackPanel>
+                            <StackPanel Width="40" Height="88" Orientation="Vertical">
+                                <Grid Width="56" Height="4"/>
+                                <Image Name="JunctionAheadActive" Width="30" Height="30" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnJunctionAheadActive.png" ToolTip="Switch junction ahead"/>
+                                <Image Name="JunctionBehindActive" Width="30" Height="30" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnJunctionBehindActive.png" ToolTip="Switch junction behind"/>
+                                <Image Name="PBrakeActive" Width="40" Height="24" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPBrakeActive.png" ToolTip="Parking Brake"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Width="88" Orientation="Vertical">
+                            <StackPanel.Background>
+                                <ImageBrush ImageSource="/RailWorks_Joystick_API;component/bin/Debug/Images/ButtonControls1bg.png" Stretch="None" TileMode="None" />
+                            </StackPanel.Background>
+                            <StackPanel Width="88" Height="6" />
+                            <StackPanel Width="88" Height="25" Orientation="Horizontal">
+                                <Grid Width="6" Height="25" />
+                                <Image Name="WipersActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnWipersActive.png" ToolTip="Wipers"/>
+                                <Image Name="LightsActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnLightsActive1.png" ToolTip="Lights"/>
+                                <Image Name="PantographActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPantographActive.png" ToolTip="Pantograph"/>
+                            </StackPanel>
+                            <StackPanel Width="88" Height="25" Orientation="Horizontal">
+                                <Grid Width="6" Height="25" />
+                                <Image Name="LoadUnloadActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnLoadUnloadActive.png" ToolTip="Load / Unload"/>
+                                <Image Name="SanderActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnSanderActive.png" ToolTip="Sander"/>
+                                <Image Name="SmallEjectorActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnSmallEjectorActive.png" ToolTip="Small Ejector"/>
+                            </StackPanel>
+                            <StackPanel Width="88" Height="25" Orientation="Horizontal">
+                                <Grid Width="6" Height="25" />
+                                <Image Name="HornActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnHornActive.png" ToolTip="Horn"/>
+                                <Image Name="BellActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnBellActive.png" ToolTip="Bell"/>
+                                <Image Name="CylinderCocksActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnCylinderCocksActive.png" ToolTip="Cylinder Cocks"/>
+                            </StackPanel>
+                            <StackPanel Width="88" Height="6" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Width="254" Height="88" Orientation="Horizontal">
+                        <StackPanel Width="116" Orientation="Vertical">
+                            <StackPanel Width="106" Height="40" Orientation="Horizontal">
+                                <Grid Width="5" />
+                                <Image Name="StarterActive" Width="40" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnStarterActive.png" ToolTip="Engine Start/Stop"/>
+                                <Grid Width="5" />
+                                <Image Name="ManualCouplingActive" Width="56" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnManualCouplingActive.png" ToolTip="Manually Couple"/>
+                            </StackPanel>
+                            <StackPanel Width="116" Height="8" Orientation="Horizontal" />
+                            <StackPanel Width="116" Height="40" Orientation="Horizontal">
+                                <Grid Width="0" />
+                                <Image Name="AWSActive" Width="40" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnAWSInactive.png" ToolTip="Advanced Warning System (AWS)"/>
+                                <Grid Width="0" />
+                                <Image Name="EBrakeActive" Width="40" Height="40" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnEBrakeInactive.png" ToolTip="Emergency Brakes"/>
+                                <Image Name="VigilanceActive" Width="32" Height="32" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnVigilanceInactive.png" ToolTip="Vigilance System"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Width="138" Orientation="Vertical">
+                            <StackPanel.Background>
+                                <ImageBrush ImageSource="/RailWorks_Joystick_API;component/bin/Debug/Images/ButtonControls2bg.png" Stretch="None" TileMode="None" />
+                            </StackPanel.Background>
+                            <StackPanel Width="138" Height="6" />
+                            <StackPanel Width="138" Height="25" Orientation="Horizontal">
+                                <Grid Width="7" Height="25" />
+                                <Image Name="HeadOutLeftActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnHeadOutLeftActive.png" ToolTip="Head out cab left/right camera"/>
+                                <Image Name="CabActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnCabActive.png" ToolTip="Cab camera"/>
+                                <Image Name="HeadOutRightActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnHeadOutRightActive.png" ToolTip="Head out cab left/right camera"/>
+                                <Image Name="TracksideActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnTracksideActive.png" ToolTip="Trackside camera"/>
+                                <Image Name="AlternateActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnAlternateActive.png" ToolTip="Alternate camera"/>
+                            </StackPanel>
+                            <StackPanel Width="138" Height="25" Orientation="Horizontal">
+                                <Grid Width="7" Height="25" />
+                                <Image Name="ExternalFrontActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnExternalFrontActive.png" ToolTip="Front external camera"/>
+                                <Image Name="ExternalRearActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnExternalRearActive.png" ToolTip="Rear external camera"/>
+                                <Image Name="PassengerActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPassengerActive.png" ToolTip="Passenger camera"/>
+                                <Image Name="NextCabActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnNextcabActive.png" ToolTip="Next cab camera"/>
+                                <Image Name="PreviousCabActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnPreviousCabActive.png" ToolTip="Previous cab camera"/>
+                            </StackPanel>
+                            <StackPanel Width="138" Height="25" Orientation="Horizontal">
+                                <Grid Width="7" Height="25" />
+                                <Image Name="CouplingActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnCouplingActive.png" ToolTip="Coupling camera"/>
+                                <Image Name="YardActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnYardActive.png" ToolTip="Yard camera"/>
+                                <Image Name="FreeRoamActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnFreeRoamActive.png" ToolTip="Free roam camera"/>
+                                <Image Name="ZoomInActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnZoomInActive.png" ToolTip="Zoom in"/>
+                                <Image Name="ZoomOutActive" Width="25" Height="25" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BtnZoomOutActive.png" ToolTip="Zoom out"/>
+                            </StackPanel>
+                            <StackPanel Width="138" Height="6" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Width="254" Height="21" Orientation="Vertical">
+
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Name="DigitalSpeedo" Width="254" Height="91" Orientation="Horizontal" ToolTip="Digital speedometer">
+                    <Grid Width="56" VerticalAlignment="Top">
+                        <Image Name="SpeedoDigital1" Stretch="None" Width="56" Height="81" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/DigiMinus.png"/>
+                    </Grid>
+                    <Grid Width="56" VerticalAlignment="Top">
+                        <Image Name="SpeedoDigital2" Stretch="None" Width="56" Height="81" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/DigiMinus.png"/>
+                    </Grid>
+                    <Grid Width="56" VerticalAlignment="Top">
+                        <Image Name="SpeedoDigital3" Stretch="None" Width="56" Height="81" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/DigiMinus.png"/>
+                    </Grid>
+                    <Grid Width="30" VerticalAlignment="Top">
+                        <Image Name="SpeedoDigitalDot" Stretch="None" Width="30" Height="81" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/DigiDot.png"/>
+                    </Grid>
+                    <Grid Width="56" VerticalAlignment="Top">
+                        <Image Name="SpeedoDigital4" Stretch="None" Width="56" Height="81" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/DigiMinus.png"/>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+            <Grid Width="118">
+                <TextBlock Foreground="White" TextAlignment="Center" VerticalAlignment="Center">
+                    Steam controls<LineBreak />
+                    Will go here in<LineBreak />
+                    A future build.
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+        
+        
+        
+        <StackPanel Height="224" Name="ControlSlots" Width="672" Orientation="Horizontal">
+            <StackPanel Height="224" Name="ThrottleControls" Orientation="Vertical">
+                <StackPanel.ToolTip>
+                    <TextBlock>
+                                Throttle /
+                                <LineBreak/>
+                                Combined Throttle&amp;Brakes
+                    </TextBlock>
+                </StackPanel.ToolTip>
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlot.png"/>
+                    <Image Stretch="None" Width="80" Height="32" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ThrottleHandle.png"/>
+                    <Label Content="0%" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Throttle
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel Name="TrainBrakeControls" Orientation="Vertical" ToolTip="Train Brakes">
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlot.png"/>
+                    <Image Stretch="None" Width="48" Height="48" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BrakeKnob.png"/>
+                    <Label Content="0%" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Train<LineBreak/>Brakes
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel Name="LocomotiveBrakeControls" Orientation="Vertical" ToolTip="Locomotive Brakes">
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlot.png"/>
+                    <Image Stretch="None" Width="48" Height="48" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BrakeKnob.png"/>
+                    <Label Content="0%" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Locomotive<LineBreak/>Brakes
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel Name="DynamicBrakeControls" Orientation="Vertical" ToolTip="Dynamic Brakes">
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlot.png"/>
+                    <Image Stretch="None" Width="48" Height="48" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/BrakeKnob.png"/>
+                    <Label Content="0%" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Dynamic<LineBreak/>Brakes
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel Name="ReverserControls" Orientation="Vertical" ToolTip="Reverser">
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlot.png"/>
+                    <Image Stretch="None" Width="48" Height="48" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ReverserKnob.png"/>
+                    <Label Content="0%" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Reverser
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+            <StackPanel Name="GearControls" Orientation="Vertical" ToolTip="Gear">
+                <Grid Width="112" Height="112">
+                    <Image Stretch="None" Width="112" Height="112" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/ControlSlotGear.png"/>
+                    <Image Stretch="None" Width="48" Height="48" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/GearKnob.png"/>
+                    <Label Content="0" Height="28" HorizontalAlignment="Center" Margin="0,6,0,0" VerticalAlignment="Top" Foreground="White" />
+                </Grid>
+                <Grid Width="112">
+                    <Image Stretch="None" Width="112" Height="56" Source="/RailWorks_Joystick_API;component/bin/Debug/Images/LabelPanel.png"/>
+                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontSize="14" FontWeight="Bold">
+                        Gear
+                    </TextBlock>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+    <UserControl.Background>
+        <ImageBrush ImageSource="/RailWorks_Joystick_API;component/bin/Debug/Images/Background.png" />
+    </UserControl.Background>
+</UserControl>
